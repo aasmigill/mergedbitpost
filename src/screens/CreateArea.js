@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import AddIcon from '@mui/icons-material/Add';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FaPlus } from "react-icons/fa";
  import { FaRegPlusSquare } from "react-icons/fa";
 import { FaPlusCircle } from "react-icons/fa";
@@ -63,11 +63,13 @@ function CreateArea(props) {
           placeholder="Write your thoughts"
           rows={isExpanded ? 3 : 1}
         />
-        <FaPlusCircle in={isExpanded}>
+        {/* <FontAwesomeIcon icon={faCoffee} /> */}
+        <FontAwesomeIcon icon ={FaPlusCircle} in={isExpanded}>
           <FaPlus onClick={submitNote}>
             <FaRegPlusSquare />
           </FaPlus>
-        </FaPlusCircle>
+          </FontAwesomeIcon>
+        {/* </FaPlusCircle> */}
       </form>
     </div>
   );

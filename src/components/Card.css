@@ -8,6 +8,7 @@
 	border-style: solid;
 	transition: 200ms;
     max-width: 380px;
+	margin: auto;
 }
 
 .card:hover {
@@ -33,7 +34,7 @@
 	font-size: 20pt;
 	text-align: center;
 	font-weight: bold;
-	color: white;
+	color: black;
 	justify-content: center;
 }
 

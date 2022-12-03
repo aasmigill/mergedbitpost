@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/about.css";
+import Tips from "../components/Tips";
 import Particle from "react-particles-js";
 import particlesConfig from "../assets/particlesConfig.json";
 
@@ -10,7 +11,7 @@ function About() {
     <div className="App">
       <div className="App-text about">
         <div className="about-text__title">
-          Hello, I'm{" "}
+          {/* Hello, I'm{" "}
           <span className="about-text__title-big">Aditya Raj Singh</span>.
         </div>
         <div className="about-text__title">
@@ -21,7 +22,24 @@ function About() {
           Dont let those those thhoughts be inside you anymore , let them be explored
           <br />
           <br />You can also earn from it if a generous reader decides to tip you with some ethereum
+        </div>  */}
+         
+        USERNAME - {""}
+          <span className="about-text__title-big">Aditya Raj Singh</span>.
         </div>
+        <div className="about-text__title">
+          Your TIPS History
+        </div>
+        <div className="goo">
+        <Tips name = "aasmi" date="today" price="10" thoughts ="so this will be here alright"/>
+        <Tips name = "urvashi" date="yesterday" price="20" thoughts ="ok so thats how its done"/>
+        
+        </div>
+        <div className="about-text__body">
+          Dont let thos those thhoughts be inside you anymore , let them be explored
+          <br />
+        </div>
+
         <div className="about-social">
           <div className="about-social__title">Thanks for Visiting</div>
           <div className="about-social__links">
